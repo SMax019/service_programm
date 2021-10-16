@@ -28,10 +28,10 @@
                 <p class="login_text password_text">Password</p>
                 <div class="password_input_wrapper">
                     <input class="login_input password_input" type="password" placeholder="••••••" required>
-                    <button class="password_view password_view_active"></button>
+                    <button class="password_view"></button>
                 </div>
-
-                <a class="password_recovery" href="#">parolni unutdingizmi ?</a>
+                
+                <a class="password_recovery" href="#" onclick="myFunction()">parolni unutdingizmi ?</a>
                 
                 <button class="login_form_button" type="submit">KIRISH</button>
                 
@@ -39,5 +39,34 @@
             
         </div>
     </section>
+    
+    <div id="snackbar">Parol sizni @mail ingizga jo`natildi</div>
+    
+    <script>
+        function myFunction() {
+            // Get the snackbar DIV
+            var x = document.getElementById("snackbar");
+            
+            // Add the "show" class to DIV
+            x.className = "show";
+            
+            // After 3 seconds, remove the show class from DIV
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        }
+        
+        const input = document.querySelector('.password_input')
+        const viewbutton = document.querySelector('.password_view')
+        
+        viewbutton.onclick = (e) => {
+            
+            if (input.type === "password") {
+                input.type = "text";
+            } else {
+                input.type = "password";
+            }
+        }
+        
+    </script>
+    
 </body>
 </html>
