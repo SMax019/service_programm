@@ -3,8 +3,13 @@ body{
     padding: 0;
     font-family: 'Ubuntu', sans-serif;
     line-height: 23px;
+    background-color: #F8F8F8;
 }
 
+.body{
+    display: flex;
+    overflow: hidden;
+}
 
 .container{
     max-width: 1440px;
@@ -21,5 +26,149 @@ body{
 
 .right_container{
     padding-left: 134px;
-    padding: 19px 45px 19px 128px;
+    padding: 19px 100px 19px 128px;
 }
+
+.left{
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #449797;
+}
+
+.left_header{
+    background-color: #428E89;
+}
+
+.left_link_img_container{
+    padding-top: 15px;
+    padding-bottom: 9px;
+}
+
+.left_img_link{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.left_logo_img{
+    width: 180px;
+    height: auto;
+}
+
+.left_list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left_item{
+    margin: 0;
+    padding: 0;
+}
+
+.left_item_link_wrapper{
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.left_item_img{
+    margin-right: 25px;
+}
+
+.left_item_text{
+    color: white;
+}
+
+.left_main{
+    height: 40vh;
+}
+
+.left_footer{
+    margin-top: auto;
+}
+
+.left_item_active{
+    border-left: 5px solid dodgerblue;
+}
+
+.left_item_active .left_container{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-left: 20px;
+}
+
+/* SECTION RIGHT */
+
+.right{
+    width: 1620px;
+}
+
+.right_header{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+}
+
+.right_top_container{
+    display: flex;
+    align-items: center;
+}
+
+.title_wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.title_icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.title_text{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.time_wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+}
+
+.right_top_date{
+    margin-right: 20px;
+}
+
+.right_top_time{
+    margin-right: 55px;
+}
+
+.search_input{
+    width: 200px;
+    height: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+    background-image: url('../img/main/search_lupa.png');
+    background-repeat: no-repeat;
+    background-position: 15px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.right_top_datetime{
+    font-weight: bold;
+}
+
+/* RIGHT TOP */
