@@ -8,3 +8,68 @@
 
 /* RIGHT-BODY */
 
+.adduser{
+    margin-top: 130px;
+    /* background-color: red; */
+}
+
+.adduser_form{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs_wrapper{
+    background-color: white;
+    padding: 29px 48px 49px 55px;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.input_wrapper{
+    width: 249px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+.input_label{
+    margin-bottom: 15px;
+}
+
+.input{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border-radius: 4px;
+    border: 2px solid #97AFCB;
+}
+
+.input_wrapper_ism{
+    margin-bottom: 57px;
+}
+
+.input_wrapper_familiya{
+    margin-bottom: 57px;
+}
+
+.input_wrapper_yosh{
+    margin-bottom: 57px;
+}
+
+.remove_margin_right{
+    margin-right: 0;
+}
+
+.adduser_btn{
+    width: 150px;
+    height: 40px;
+    background-color: rgba(30, 144, 255, 0.7);
+    /* font-weight: bold; */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-left: auto;
+}
